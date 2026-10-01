@@ -1,6 +1,12 @@
-def calculate_average(a, b, c):
-    return a + b + c / calculate_average
+def total(*number):
 
-result = calculate_average(95, 88, 92)
+    total = 0
+
+    for value in number:
+        total = total + value
+
+    return total
+
+result = total(95, 88, 92)
 
 print(result)
