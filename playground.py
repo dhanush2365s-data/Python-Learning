@@ -1,22 +1,6 @@
-students = {
-    "Dhanush": {
-        "age": 16,
-        "marks": [95, 88, 92]
-    },
-    "Arun": {
-        "age": 17,
-        "marks": [78, 85, 90]
-    }
-}
+def calculate_average(a, b, c):
+    return a + b + c / calculate_average
 
-for name, value in students.items():
+result = calculate_average(95, 88, 92)
 
-    marks = value["marks"]
-    total = 0
-
-    for mark in marks:
-        total = total + mark
-
-    avg = total / len(marks)
-
-    print(name, "average is", avg)
+print(result)
