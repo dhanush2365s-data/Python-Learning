@@ -1,17 +1,15 @@
-def largest_number(*number):
+def calculate_average(*numbers):
 
-    largest_value = None
+    total = 0
 
-    for value in number:
+    for value in numbers:
+        total = total + value
 
-        if largest_value is None:
-            largest_value = value
+        avg = total / len(numbers)
 
-        elif value > largest_value:
-            largest_value = value
+    return avg
 
-    return largest_value
-
-result = largest_number(10, 20, 30)
+result = calculate_average(95, 88, 92)
 
 print(result)
+
