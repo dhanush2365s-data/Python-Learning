@@ -1,15 +1,11 @@
-def calculate_average(*numbers):
+def show_profile(**numbers):
 
-    total = 0
+    for key, value in numbers.items():
+        print(key, value)
 
-    for value in numbers:
-        total = total + value
-
-        avg = total / len(numbers)
-
-    return avg
-
-result = calculate_average(95, 88, 92)
-
-print(result)
-
+show_profile(
+    name = "Dhanush",
+    age = 16,
+    country = "Germany",
+    goal = "Lot of goals"
+)
